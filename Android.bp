@@ -44,7 +44,7 @@ cc_defaults {
     // built by this build file aren't exported. If that changes, you'll
     // need to come up with a plan (probably either upstreaming better 32-bit
     // support, or waiting until we no longer support 32-bit either).
-    visibility: [":__subpackages__"],
+    visibility: [":__subpackages__", "//bootable/recovery/volume_manager"],
 }
 
 cc_binary {
